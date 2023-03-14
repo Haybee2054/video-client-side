@@ -6,7 +6,6 @@ const SocketContext = createContext();
 
 const socket = io('video-server-production.up.railway.app');
 
-
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
   const [callEnded, setCallEnded] = useState(false);
